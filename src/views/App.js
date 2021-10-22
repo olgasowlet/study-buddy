@@ -1,9 +1,10 @@
+import UsersList from "components/UsersList/UsersList";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <>
+      <UsersList />
+    </>
   );
 }
 
