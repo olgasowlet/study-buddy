@@ -4,6 +4,7 @@ export const Wrapper = styled.li`
   display: flex;
   align-items: center;
   position: relative;
+  padding: 5px 0;
 
   &:not(:last-child)::after {
     content: "";
