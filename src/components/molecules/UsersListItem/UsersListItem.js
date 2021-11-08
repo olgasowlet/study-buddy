@@ -10,7 +10,6 @@ function UsersListItem({ userData: { name, attendance, avarage = "0%" } }) {
     <Wrapper>
       <AvarageGrade avarage={avarage}/>
       <UserData name={name} attendance={attendance}/>
-      <Button />
     </Wrapper>
   );
 }

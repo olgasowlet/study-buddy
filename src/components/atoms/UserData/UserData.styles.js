@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const StyledP = styled.p`
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.darkGrey};
   margin: 0;
 
   ${({ name }) =>
@@ -9,6 +9,8 @@ export const StyledP = styled.p`
     css`
       font-size: ${({ theme }) => theme.fontSize.l};
       font-weight: bold;
+      display: flex;
+      align-items: center;
     `}
 
   ${({ attendance }) =>
@@ -19,7 +21,5 @@ export const StyledP = styled.p`
 `;
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
     margin: 20px;
 `;

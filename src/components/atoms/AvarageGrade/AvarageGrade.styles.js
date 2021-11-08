@@ -10,15 +10,10 @@ export const GradeContainer = styled.div`
   font-size: ${({ theme }) => theme.fontSize.m};
   color: ${({ theme }) => theme.colors.white};
   font-weight: bold;
-
-  ${({ avarage }) =>
-    avarage &&
-    css`
-      background-color: ${({ theme }) =>
-        avarage < 2
-          ? theme.colors.error
-          : avarage < 4
-          ? theme.colors.warning
-          : theme.colors.success};
-    `}
+  background-color: ${({theme, avarage}) => {
+    if (avarage < 2 ) return theme.colors.error;
+    if (avarage < 4 ) return theme.colors.warning;
+    if (avarage >= 4 ) return theme.colors.success;
+    return theme.colors.grey
+  }};
 `;
