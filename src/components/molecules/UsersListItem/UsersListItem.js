@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Container, StyledP, Wrapper } from "./UsersListItem.styles";
 import AvarageGrade from "components/atoms/AvarageGrade/AvarageGrade";
-import Button from "components/atoms/Button/Button";
+import StudentButton from "components/atoms/StudentButton/StudentButton";
 function UsersListItem({
   deleteUser,
   index,
@@ -14,7 +14,7 @@ function UsersListItem({
       <Container>
         <StyledP name>
           {name}
-          <Button onClick={() => deleteUser(index)} />
+          <StudentButton onClick={() => deleteUser(index)} />
         </StyledP>
         <StyledP attendance>attendace: {attendance}</StyledP>
       </Container>
