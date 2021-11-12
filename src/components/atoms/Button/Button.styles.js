@@ -1,19 +1,13 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
-  width: 25px;
-  height: 25px;
-  background-color: ${({theme}) => theme.colors.grey};
-  border-radius: 50px;
+export const Button = styled.button`
+  background-color: ${({ theme }) => theme.colors.lightBlue};
   border: none;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
-
-  svg {
-    width: 100%;
-    height: 100%;
-  }
+  border-radius: 97px;
+  font-size: ${({ theme }) => theme.fontSize.s};
+  font-weight: bold;
+  color: ${({ theme }) => theme.colors.darkGrey};
+  margin: 15px 0;
+  align-self: flex-end;
+  padding: 10px 30px;
 `;
