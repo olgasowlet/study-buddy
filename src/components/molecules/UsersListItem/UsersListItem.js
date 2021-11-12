@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import { Wrapper } from "./UsersListItem.styles";
+import { Container, StyledP, Wrapper } from "./UsersListItem.styles";
 import AvarageGrade from "components/atoms/AvarageGrade/AvarageGrade";
-import UserData from "components/atoms/UserData/UserData";
-function UsersListItem({ deleteUser, index, userData: { name, attendance, avarage = "0%" } }) {
+import Button from "components/atoms/Button/Button";
+function UsersListItem({
+  deleteUser,
+  index,
+  userData: { name, attendance, avarage = "0%" },
+}) {
   return (
     <Wrapper>
-      <AvarageGrade avarage={avarage}/>
-      <UserData name={name} attendance={attendance} index={index} deleteUser={deleteUser}/>
+      <AvarageGrade avarage={avarage} />
+      <Container>
+        <StyledP name>
+          {name}
+          <Button onClick={() => deleteUser(index)} />
+        </StyledP>
+        <StyledP attendance>attendace: {attendance}</StyledP>
+      </Container>
     </Wrapper>
   );
 }
