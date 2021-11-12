@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background-color: ${({theme}) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
   max-width: 500px;
   padding: 35px 30px;
@@ -13,3 +13,7 @@ export const StyledList = styled.ul`
   padding: 0;
 `;
 
+export const StyledTitle = styled.h1`
+  font-size: ${({ theme }) => theme.fontSize.xl};
+  color: ${({ theme }) => theme.colors.darkGrey};
+`;
