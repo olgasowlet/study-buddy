@@ -14,6 +14,8 @@ function FormField({onChange, value, label, name, id, type = 'text', ...props}) 
 }
 
 FormField.propTypes = {
+    onChange: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,

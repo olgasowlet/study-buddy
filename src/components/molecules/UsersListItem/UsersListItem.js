@@ -28,6 +28,8 @@ UsersListItem.propTypes = {
     attendance: PropTypes.string.isRequired,
     avarage: PropTypes.string,
   }),
+  deleteUser: PropTypes.func.isRequired,
+  index: PropTypes.string.isRequired
 };
 
 export default UsersListItem;

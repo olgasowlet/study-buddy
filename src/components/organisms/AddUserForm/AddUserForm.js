@@ -34,6 +34,10 @@ const AddUserForm = ({handleAdduser, inputsValues, onInputChange}) => {
   );
 }
 
-AddUserForm.propTypes = {};
+AddUserForm.propTypes = {
+  handleAdduser: PropTypes.func.isRequired,
+  inputsValues: PropTypes.object.isRequired,
+  onInputChange: PropTypes.func.isRequired,
+};
 
 export default AddUserForm;

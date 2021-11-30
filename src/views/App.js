@@ -7,7 +7,7 @@ import { theme } from "assets/styles/theme";
 import { Wrapper } from "./App.styles";
 import { users as data } from "data/users";
 import AddUserForm from "components/organisms/AddUserForm/AddUserForm";
-import Navigation from "components/organisms/Navigation/Navigation";
+import Navigation from "components/molecules/Navigation/Navigation";
 import { routes } from "assets/routes/routes";
 
 const mockAPI = (success) => {
