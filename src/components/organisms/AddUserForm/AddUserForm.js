@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StyledTitle, Wrapper } from "../UsersList/UsersList.styles";
 import FormField from "components/molecules/FormField/FormField";
 import { Button } from "components/atoms/Button/Button.styles";
+import { StyledTitle, Wrapper } from "components/atoms/CommonStyles/CommonStyles";
 
 const AddUserForm = ({handleAdduser, inputsValues, onInputChange}) => {
   return (

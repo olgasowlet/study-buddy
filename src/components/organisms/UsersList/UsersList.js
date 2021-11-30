@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import UsersListItem from "components/molecules/UsersListItem/UsersListItem";
-import { Wrapper, StyledList, StyledTitle } from "./UsersList.styles";
+import { StyledList } from "./UsersList.styles";
+import { StyledTitle, Wrapper } from "components/atoms/CommonStyles/CommonStyles";
 
 function UsersList({ users, deleteUser, isLoading }) {
   return (
