@@ -3,6 +3,7 @@ export const theme = {
       white: '#FFFFFF',
       lightGrey: '#F7F8FA',
       grey: '#C0C7D6',
+      divider: '#DFE2E8',
       black: '#111111',
       success: '#8FCB81',
       error: '#CB8581',
